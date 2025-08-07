@@ -4,15 +4,12 @@
   --fonte-corpo: "Inter", sans-serif;
   --fonte-titulos: "Bai Jamjuree", sans-serif;
 
-  /* TIPOGRAFIA */
-  --font-size-xl: 3.75rem;
-  --font-size-l: 2rem;
-  --font-size-m: 1.25rem;
-  --font-size-b: 1rem;
-  --font-size-s: 0.75rem;
-
-
-
+  /* Tipografia */
+  --fonte-size-xl: 3.75rem;
+  --fonte-size-l: 2rem;
+  --fonte-size-m: 1.25rem;
+  --fonte-size-b: 1rem;
+  --fonte-size-s: 0.75rem;
 
   /* Cores */
   --cor-texto: #6e859f;
@@ -51,7 +48,7 @@ h3,
 h4,
 h5 {
   font-family: var(--fonte-titulos);
-  font-size: var(--font-size-xl);
+  font-size: var(--fonte-size-xl);
   font-weight: 700;
 }
 
@@ -63,6 +60,7 @@ body {
 .container {
   width: 1192px;
   margin: 0 auto;
+
   @media (max-width: 768px) {
     width: 674px;
   }
@@ -91,42 +89,46 @@ body {
 }
 
 .cabecalho__item > a {
-  font-size: var(--font-size-b);
+  font-size: var(--fonte-size-b);
   font-weight: 500;
   color: var(--cor-texto);
   text-decoration: none;
   transition: 0.2s ease-in;
-  @media(max-width: 768px){
-    font-size: var(--font-size-s);
+
+  @media (max-width: 768px) {
+    font-size: var(--fonte-size-s);
   }
 
   &:hover {
     color: var(--cor-destaque-roxo);
   }
 }
-.cabecalho__item:nth-child(6){
+
+.cabecalho__item:nth-child(6) {
   display: none;
-  @media(max-width: 768px){
+
+  @media (max-width: 768px) {
     display: inline;
   }
 }
+
 .cabecalho__botoes {
   display: flex;
   gap: var(--gap-s);
-  @media(max-width: 768px){
-    & > a.btn__primario{
+
+  @media (max-width: 768px) {
+    & > a.btn__primario {
       text-align: center;
     }
-  }
-  @media(max-width: 768px){
-    & > a.btn__secundario{
+
+    & > a.btn__secundario {
       display: none;
-        }
+    }
   }
 }
 
 .cabecalho__botoes > a {
-  font-size: var(--font-size-s);
+  font-size: var(--fonte-size-s);
 }
 
 .cabecalho__divisor {
@@ -143,7 +145,7 @@ body {
   padding: var(--padding-xs) var(--padding-l);
   border: none;
   border-radius: 200px;
-  font-size: var(--font-size-b);
+  font-size: var(--fonte-size-b);
   font-weight: 600;
 }
 
@@ -192,7 +194,7 @@ body {
 
 .banner__descricao {
   color: var(--cor-texto);
-  font-size: var(--font-size-m);
+  font-size: var(--fonte-size-m);
 }
 
 .quem-somos {
@@ -262,7 +264,7 @@ body {
   width: 33.33%;
 
   & > h3 {
-    font-size: var(--font-size-m);
+    font-size: var(--fonte-size-m);
     text-transform: uppercase;
     padding: var(--padding-m) 0;
   }
@@ -281,7 +283,7 @@ body {
 
   & > p {
     color: var(--cor-texto);
-    font-size: var(--font-size-m);
+    font-size: var(--fonte-size-m);
   }
 }
 
@@ -318,7 +320,7 @@ body {
   gap: var(--gap-l);
 
   & > div > h3 {
-    font-size: var(--font-size-l);
+    font-size: var(--fonte-size-l);
     font-weight: 700;
     padding-bottom: var(--padding-xs);
   }
@@ -474,7 +476,7 @@ body {
   & > h3 {
     font-family: var(--fonte-corpo);
     font-weight: 700;
-    font-size: var(--font-size-m);
+    font-size: var(--fonte-size-m);
   }
 }
 
@@ -570,7 +572,7 @@ body {
 
   & > h3 {
     color: var(--cor-titulo-vermelho);
-    font-size: var(--font-size-m);
+    font-size: var(--fonte-size-m);
     text-align: center;
   }
 }
@@ -639,7 +641,7 @@ body {
 
   & > h4 {
     color: var(--cor-texto);
-    font-size: var(--font-size-b);
+    font-size: var(--fonte-size-b);
   }
 
   & > a {
