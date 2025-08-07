@@ -1,5 +1,3 @@
-![Alura Start](thumb.png)
-
 # Alura Start
 
 A Alura Start faz parte do ecossistema Alura e é voltada para introduzir crianças e adolescentes ao mundo da tecnologia e programação de forma divertida e educativa. Através de projetos práticos, a plataforma ensina lógica de programação, pensamento computacional e habilidades digitais.
