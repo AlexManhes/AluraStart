@@ -50,6 +50,12 @@ h5 {
   font-family: var(--fonte-titulos);
   font-size: var(--fonte-size-xl);
   font-weight: 700;
+
+  @media (max-width: 768px) {
+    &:not(h1) {
+      font-size: var(--fonte-size-l);
+    }
+  }
 }
 
 body {
@@ -174,6 +180,12 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 5.5rem 0;
+
+  @media (max-width: 768px) {
+    & > .banner__imagem {
+      display: none;
+    }
+  }
 }
 
 .banner__texto-principal {
@@ -181,6 +193,12 @@ body {
   flex-direction: column;
   gap: var(--gap-xl);
   align-items: self-start;
+
+  @media (max-width: 768px) {
+    align-items: center;
+    text-align: center;
+    padding: 0 5.5rem;
+  }
 }
 
 .banner__titulo {
@@ -201,6 +219,11 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 7rem 0;
+
+  @media (max-width: 768px) {
+    flex-direction: row-reverse;
+    padding: var(--padding-xl) 0;
+  }
 }
 
 .quem-somos__texto-principal {
